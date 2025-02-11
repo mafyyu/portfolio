@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily:{
+      ZenakuGothicNew:['Zen Kaku Gothic New','sans-serif']
+    }
   },
   plugins: [],
 } satisfies Config;

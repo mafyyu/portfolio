@@ -19,7 +19,7 @@ export default function Hamburger(){
                     </button>
                 </header>
                 <nav className={openMenu ?"text-center fixed bg-slate-50 right-0 top-0 w-3/12 h-screen flex flex-col justify-start pt-8 px-3":"fixed right-[-100%] "}>
-                    <ul className="text-2xl pt-[10vh] space-y-10">
+                    <ul className="text-2xl pt-[10vh] space-y-10 font-ZenakuGothicNew">
                         <li><a href="/">Home</a></li>
                         <li><a href="profile">About Me</a></li>
                         <li><a href="articles">Articles</a></li>
