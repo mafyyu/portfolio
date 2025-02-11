@@ -16,6 +16,9 @@ export default {
         Orbitron: ['Orbitron', 'sans-serif'],
       },
     },
+    fontFamily:{
+      ZenakuGothicNew:['Zen Kaku Gothic New','sans-serif']
+    }
   },
   plugins: [],
 } satisfies Config;
