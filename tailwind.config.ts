@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily:{
+        Orbitron: ['Orbitron', 'sans-serif'],
+      },
     },
     fontFamily:{
       ZenakuGothicNew:['Zen Kaku Gothic New','sans-serif']
