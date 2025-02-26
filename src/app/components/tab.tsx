@@ -10,9 +10,9 @@ interface TabProps {
   export default function Tab({ color, hsize, wsize, text, link, position }: TabProps) {
     return (
       <a href={link}>
-        <div className={`w-full h-full max-w-3xl mx-auto ${position}`}>
+        <div className={` max-w-3xl ${position}`}>
           <div
-            className={`${color} rounded-2xl shadow-lg`}
+            className={`${color} absolute rounded-2xl shadow-lg`}
             style={{ height: `${hsize}px`, width: `${wsize}px` }}
           >
             {/* Window Controls */}

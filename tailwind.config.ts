@@ -12,13 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      fontFamily:{
-        Orbitron: ['Orbitron', 'sans-serif'],
+      fontFamily: {
+        Orbitron: ["Orbitron", "sans-serif"],
+        NotoSans: ["Noto Sans JP", "sans-serif"],
+        ZenakuGothicNew: ["Zen Kaku Gothic New", "sans-serif"],
       },
     },
-    fontFamily:{
-      ZenakuGothicNew:['Zen Kaku Gothic New','sans-serif']
-    }
   },
   plugins: [],
 } satisfies Config;
