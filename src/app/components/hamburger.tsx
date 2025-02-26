@@ -1,35 +1,55 @@
 "use client";
-import React from "react"
-import { useState } from "react"
+import React, { useState } from "react";
 
-export default function Hamburger(){
-    const [openMenu,setOpenMenu] = useState(false)
-    const handleMenuOpen=()=>{
-        setOpenMenu(!openMenu)
-    };
-    return(
-        <>
-            <div className="">
-                <header className="flex justify-between py-6 px-6  ">
-                    <button type="button" className="z-10 space-y-2 ml-auto" onClick={handleMenuOpen} >
-                    <div className={openMenu ?"w-8 h-0.5 bg-gray-600 rotate-45 translate-y-2.5":"w-8 h-0.5 bg-gray-600"} />
-                        <div className={openMenu ?"":"w-8 h-0.5 bg-gray-600"}/>
-                        <div className={openMenu ?"w-8 h-0.5 bg-gray-600 -rotate-45 ":"w-8 h-0.5 bg-gray-600"} />
-                        
-                    </button>
-                </header>
-                <nav className={openMenu ?"text-center fixed bg-slate-50 right-0 top-0 w-3/12 h-screen flex flex-col justify-start pt-8 px-3":"fixed right-[-100%] "}>
-                    <ul className="text-2xl pt-[10vh] space-y-10 font-ZenakuGothicNew">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="profile">About Me</a></li>
-                        <li><a href="articles">Articles</a></li>
-                        <li><a href="works">Works</a></li>
-                        <li><a href="skills">Skills</a></li>
-                        <li><a href="updates">Updates</a></li>
-                        <li><a href=""></a>??</li>
-                    </ul>
-                </nav>
-            </div>
-        </>
-    );
+export default function Hamburger() {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleMenuOpen = () => {
+    setOpenMenu(!openMenu);
+  };
+
+  return (
+    <>
+      <div className="absolute top-0 right-0">
+        {/* ヘッダー */}
+        <header className="flex justify-between py-10 px-10">
+          {/* ハンバーガーボタン */}
+          <button
+            type="button"
+            className="z-20 space-y-2 ml-auto relative"
+            onClick={handleMenuOpen}
+          >
+            <div
+              className={`w-8 h-0.5 bg-gray-600 transition-transform ${
+                openMenu ? "rotate-45 translate-y-2.5" : ""
+              }`}
+            />
+            <div className={`w-8 h-0.5 bg-gray-600 transition-opacity ${openMenu ? "opacity-0" : ""}`} />
+            <div
+              className={`w-8 h-0.5 bg-gray-600 transition-transform ${
+                openMenu ? "-rotate-45 -translate-y-2.5" : ""
+              }`}
+            />
+          </button>
+        </header>
+
+        {/* ナビゲーションメニュー */}
+        <nav
+          className={`fixed top-0 right-0 w-3/12 h-screen bg-slate-50 flex flex-col justify-start pt-8 px-3 shadow-lg transform transition-transform duration-300 ${
+            openMenu ? "translate-x-0" : "translate-x-full"
+          } z-10`}
+        >
+          <ul className="text-2xl pt-[10vh] space-y-10 font-ZenakuGothicNew flex flex-col items-center">
+            <li><a href="/">Home</a></li>
+            <li><a href="profile">About Me</a></li>
+            <li><a href="articles">Articles</a></li>
+            <li><a href="works">Works</a></li>
+            <li><a href="skills">Skills</a></li>
+            <li><a href="updates">Updates</a></li>
+            <li><a href="">??</a></li>
+          </ul>
+        </nav>
+      </div>
+    </>
+  );
 }
