@@ -4,12 +4,13 @@ interface TabProps {
     wsize: number;
     text: string;
     link: string;
+    position:string
   }
   
-  export default function Tab({ color, hsize, wsize, text, link }: TabProps) {
+  export default function Tab({ color, hsize, wsize, text, link, position }: TabProps) {
     return (
       <a href={link}>
-        <div className="w-full h-full max-w-3xl mx-auto">
+        <div className={`w-full h-full max-w-3xl mx-auto ${position}`}>
           <div
             className={`${color} rounded-2xl shadow-lg`}
             style={{ height: `${hsize}px`, width: `${wsize}px` }}
