@@ -1,5 +1,6 @@
 import Hamburger from "./components/hamburger";
 import Tab from "./components/tab";
+import Circle from "./components/circle";
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
             wsize={250}
             text="Skill"
             link="/skills"
-            position="absolute left-[30%] bottom-[90%]"
+            position="absolute left-[25%] bottom-[90%]"
         >
         </Tab>
         <Tab
@@ -42,6 +43,14 @@ export default function Home() {
             position="absolute left-[70%] bottom-[45%]"
         >
         </Tab>
+        <Circle
+            color="bg-[#FFDA9A]"
+            hsize={200}
+            wsize={340}
+            text="Articles"
+            link="/articles"
+            position="absolute left-[60%] bottom-[60%]"
+        ></Circle>
       </div>
     </div>
     
