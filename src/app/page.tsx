@@ -33,15 +33,15 @@ export default function Home() {
             position="absolute left-[30%] bottom-[90%]"
         >
         </Tab>
-        {/* <Tab
+        <Tab
             color="bg-[#FA904F]"
-            hsize={190}
-            wsize={270}
+            hsize={200}
+            wsize={290}
             text="Works"
             link="/works"
-            position="absolute left-[2%] bottom-[-55%]"
+            position="absolute left-[70%] bottom-[45%]"
         >
-        </Tab> */}
+        </Tab>
       </div>
     </div>
     
