@@ -10,9 +10,9 @@ export default function Hamburger() {
 
   return (
     <>
-      <div className="relative">
+      <div className="absolute top-0 right-0">
         {/* ヘッダー */}
-        <header className="flex justify-between py-6 px-6">
+        <header className="flex justify-between py-10 px-10">
           {/* ハンバーガーボタン */}
           <button
             type="button"
