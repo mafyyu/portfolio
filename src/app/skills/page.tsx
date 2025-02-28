@@ -1,5 +1,6 @@
 import Hamburger from "../components/hamburger";
 import Header from "../components/header";
+import { getDatabase } from "@/lib/notion/notion";
 
 export default function skills() {
   return (
