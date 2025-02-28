@@ -22,9 +22,27 @@ export default function Profile() {
           <div className="font-NotoSans text-xl whitespace-pre">{comment}</div>
         </div>
       </div>
-      <div className="flex justify-center items-center">
-        <div className="w-1/2 text-xl font-NotoSans">趣味</div>
-        <div className="text-xl font-NotoSans">ゲーム(OW2,Valorant,etc...)、音楽鑑賞、アニメ</div>
+      <div className="flex flex-col items-center space-y-10">
+        <div className="flex justify-between items-center max-w-4xl w-full">
+          <div className="text-xl font-NotoSans">趣味</div>
+          <div className="text-left text-xl font-NotoSans">ゲーム(OW2,Valorant,etc...)、音楽鑑賞、アニメ</div>
+        </div>
+        <div className="flex justify-between items-center max-w-4xl w-full">
+          <div className="text-xl font-NotoSans">興味があること</div>
+          <div className="text-left text-xl font-NotoSans">ボルダリング、自宅サーバー(詳しい人いたら教えてください！)</div>
+        </div>
+        <div className="flex justify-between items-center max-w-4xl w-full">
+          <div className="text-xl font-NotoSans">好きなアーティスト</div>
+          <div className="text-left text-xl font-NotoSans">にしな、NizuU、Twice</div>
+        </div>
+        <div className="flex justify-between items-center max-w-4xl w-full">
+        <div className="text-xl font-NotoSans"></div>
+          <div className="h-full w-full flex justify-end space-x-10">
+            <a href="https://x.com/midw_inter"><img src="/x.png" alt="x" className="w-8 h-8"/></a>
+            <a href="https://github.com/mafyyu"><img src="/github.png" alt="github" className="w-8 h-8"/></a>
+            <a href="mailto:morita0126m@gmail.com"><img src="/mail.png" alt="mail" className="w-8 h-8"/></a>
+          </div>
+        </div>
       </div>
     </div>
   );
