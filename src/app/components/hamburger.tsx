@@ -46,7 +46,6 @@ export default function Hamburger() {
             <li><a href="works">Works</a></li>
             <li><a href="skills">Skills</a></li>
             <li><a href="updates">Updates</a></li>
-            <li><a href="">??</a></li>
           </ul>
         </nav>
       </div>
