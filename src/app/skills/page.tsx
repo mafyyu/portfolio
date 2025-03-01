@@ -1,5 +1,6 @@
 import Hamburger from "../components/hamburger";
 import Header from "../components/header";
+import Skill from "../components/skill";
 
 export default function skills() {
   return (
@@ -8,10 +9,7 @@ export default function skills() {
         <Header color="bg-[#FFE375]" text="Skills"/>
         <Hamburger/>
       </div>
-      <div className="flex flex-col justify-center items-center">
-        <div className="text-4xl font-NotoSans">🚀Under Construction🚀</div>
-        <div className="text-4xl font-NotoSans">このページは作成中です</div>
-      </div>
+      <Skill></Skill>
     </div>
   );
 }
