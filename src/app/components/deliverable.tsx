@@ -9,6 +9,15 @@ export default function Deliverable(){
                         <a href="https://beginners-hack-new.vercel.app/" className="font-NotoSans text-sm">https://beginners-hack-new.vercel.app/</a>
                     </div>
                 </div>
+                <div className="flex flex-row justify-start items-center gap-x-[15%]">
+                    <div className="w-[15%] flex flex-wrap ml-[15%] gap-4 mb-3">
+                        <img src="/x.png" alt="" className="w-9 h-9" />
+                        <img src="/x.png" alt="" className="w-9 h-9" />
+                        <img src="/x.png" alt="" className="w-9 h-9" />
+                        <img src="/x.png" alt="" className="w-9 h-9" />
+                    </div>
+                    <div className="flex flex-wrap font-NotoSans text-sm w-[45%]">これはKC3Hack2025で作成したものです。これはKC3Hack2025で作成したものです。これはKC3Hack2025で作成したものです。</div>
+                </div>
             </div>
         </div>    
     )
