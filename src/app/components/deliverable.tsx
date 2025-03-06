@@ -13,6 +13,13 @@ export default function Deliverable({ data }: { data: any[] }) {
                 <div className="flex flex-col space-y-2">
                   <div className="font-NotoSans text-3xl text-gray-800">{item.data.title}</div>
                   <div className="font-NotoSans text-sm text-gray-600">{item.content}</div>
+                  <div className="flex space-x-2">
+                    {item.data.tags.map((tag:string[],index:number)=>(
+                    <div key={index} className="flex space-x-2">
+                        <div className="font-NotoSans text-sm text-gray-600">{`#${tag}`}</div>
+                    </div>
+                    ))}
+                </div>
                 </div>
               </div>
             </div>
