@@ -13,9 +13,14 @@
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.4.6",
     "@notionhq/client": "^2.2.16",
+    "@shadcn/ui": "^0.0.4",
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.7",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
