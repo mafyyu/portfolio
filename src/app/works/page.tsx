@@ -1,17 +1,25 @@
 import Hamburger from "../components/hamburger";
 import Header from "../components/header";
+import Deliverable from "../components/deliverable";
+import fs from "fs";
+import path from "path";
+import { marked } from "marked";
+import matter from "gray-matter";
+import { getAllmd } from "@/lib/getAllmd";
 
-export default function works() {
+
+export default async function works() {
+
+  const data = await getAllmd();
+
   return (
     <div>
       <div>
         <Header color="bg-[#FA904F]" text="Works"/>
         <Hamburger/>
       </div>
-      <div className="flex flex-col justify-center items-center">
-        <div className="text-4xl font-NotoSans">🚀Under Construction🚀</div>
-        <div className="text-4xl font-NotoSans">このページは作成中です</div>
-      </div> 
+      
+      <Deliverable data={data}></Deliverable>
     </div> 
   );
 }
